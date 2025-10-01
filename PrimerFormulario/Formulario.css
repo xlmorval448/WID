@@ -1,34 +1,53 @@
 body {
-  background-color: #121212; 
-  color: #e0e0e0;        
-  font-family: Arial, sans-serif;
+  background-color: rgba(83, 77, 67, 0.658);
+  font-family: sans-serif;
   margin: 0;
-  padding: 0;
-}
-
-a {
-  color: #bb86fc;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ffffff;
-}
-
-header, footer {
-  background-color: #1f1f1f;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+
+#C1,#C2,#C3,#C4,#C5,#C6,#C7 {
+  background-color: rgb(206, 206, 205);
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+fieldset,hr,table,td,tr { 
+  border-radius: 5px;
+  border-color: rgb(0, 2, 95);
+  margin: 15px 0;
+}
+
+input[type="text"],input[type="number"],input[type="email"],input[type="password"],textarea,button,select {
+  display: block;
+  margin: 10px 0;
   text-align: center;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 33, 94);
+  background-color: rgb(206, 206, 205);
+  box-sizing: border-box;
 }
 
-main {
-  padding: 20px;
+textarea {
+  min-height: 100px;
 }
 
-fieldset {
-  display: inline-block;
-  width: 45%;
-  vertical-align: top;
-  margin: 10px;
+button:hover {
+  background-color: rgb(0, 40, 80);
+  color: white;
 }
 
+td:hover {
+  background-color: rgb(0, 33, 94);
+}
+
+legend {
+  padding: 10px;
+}

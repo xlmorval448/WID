@@ -1,41 +1,589 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Formulario.css">
-    <title>Primer Formulario</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva de Viajes</title>
+    <h2 style="margin: 15px">Reserva de viajes</h2>
+    <link rel="stylesheet" href="Formulario.css" />
 </head>
+
 <body>
-    <fieldset>
-    <legend>Datos Personales</legend>
     <form>
-        <label for="nombre">Nombre: </label>
-        <br>
-        <input type="text" id="nombre" placeholder="Introduce tu nombre" required>
-        <br><br>
-        <label for="nombre2">2ºdo Nombre: </label>
-        <br>
-        <input type="text" id="nombre2" placeholder="Introduce tu 2ºdo nombre">
-        <br><br>
-        <label for="apellido">Apellidos: </label>
-        <br>
-        <input type="text" id="apellido" placeholder="Introduce tus apellidos" required>
-        <br><br>
+        <fieldset id="C7">
+            <legend style="
+            color: rgb(0, 2, 95);
+            background-color: white;
+            border-radius: 4px;
+          ">
+                Destinos recomendados
+            </legend>
+            <details>
+                <summary id="Primavera" style="width: 140px">Primavera: </summary>
+                <br />
+                <p>
+                    <span>1. Japón (Tokio y Kioto):</span> Florecimiento de los cerezos
+                    (sakura) y temperaturas suaves.
+                </p>
+                <p>
+                    Actividades: Ver los cerezos en flor, visitar templos históricos,
+                    picnic bajo los cerezos.
+                </p>
+
+                <p>
+                    <span>2. Países Bajos (Ámsterdam):</span> Campos de tulipanes en
+                    flor y clima ideal para recorrer la ciudad en bicicleta.
+                </p>
+                <p>
+                    Actividades: Visitar Keukenhof, pasear por los canales, explorar
+                    museos como el Van Gogh Museum.
+                </p>
+
+                <p>
+                    <span>3. España (Andalucía):</span> Temperaturas agradables y menos
+                    turismo que en verano.
+                </p>
+                <p>
+                    Actividades: Feria de Abril en Sevilla, recorrer la Alhambra en
+                    Granada, explorar las playas de la Costa del Sol.
+                </p>
+
+                <p>
+                    <span>4. Italia (Toscana):</span> Clima moderado y paisajes
+                    floridos.
+                </p>
+                <p>
+                    Actividades: Visitar viñedos, explorar el campo, disfrutar de la
+                    gastronomía.
+                </p>
+
+                <p>
+                    <span>5. Estados Unidos (Washington D.C.):</span> "Fiesta de los
+                    cerezos" con árboles en flor.
+                </p>
+                <p>
+                    Actividades: Ver los cerezos en el Tidal Basin, visitar monumentos y
+                    museos en el National Mall.
+                </p>
+            </details>
+            <br />
+            <details>
+                <summary id="Verano">Verano: </summary>
+                <br />
+                <p>
+                    <span>1. Islandia:</span> Largas horas de luz, paisajes naturales
+                    únicos.
+                </p>
+                <p>
+                    Actividades: Ruta del Círculo Dorado, explorar géiseres, cascadas y
+                    glaciares.
+                </p>
+
+                <p>
+                    <span>2. Grecia (Islas Cícladas):</span> Sol y clima cálido, ideal
+                    para playas y cultura.
+                </p>
+                <p>
+                    Actividades: Relajarte en playas, explorar aldeas tradicionales,
+                    disfrutar de la gastronomía mediterránea.
+                </p>
+
+                <p>
+                    <span>3. Canadá (Montañas Rocosas):</span> Clima ideal para
+                    actividades al aire libre.
+                </p>
+                <p>
+                    Actividades: Senderismo, kayak, ciclismo, explorar parques
+                    nacionales como Banff y Jasper.
+                </p>
+
+                <p>
+                    <span>4. Australia (Cairns y Gran Barrera de Coral):</span> Verano
+                    en el hemisferio sur, perfecto para buceo y exploración de la
+                    barrera de coral.
+                </p>
+                <p>
+                    Actividades: Snorkel, buceo, visitar la selva tropical, relajarte en
+                    las playas de la costa este.
+                </p>
+
+                <p>
+                    <span>5. Bali (Indonesia):</span> Clima tropical perfecto para
+                    disfrutar de playas y naturaleza.
+                </p>
+                <p>
+                    Actividades: Surf, visitar templos, disfrutar de la cultura local y
+                    las playas de Kuta.
+                </p>
+            </details>
+            <br />
+            <details>
+                <summary id="Otoño">Otoño: </summary>
+                <br />
+                <p>
+                    <span>1. Nueva Zelanda (Sur Islandia):</span> Colores de otoño y
+                    menos turistas.
+                </p>
+                <p>
+                    Actividades: Trekking en Fiordland, explorar paisajes de "El Señor
+                    de los Anillos", disfrutar de la cultura maorí.
+                </p>
+
+                <p>
+                    <span>2. Turquía (Estambul y Capadocia):</span> Clima fresco y menos
+                    turistas.
+                </p>
+                <p>
+                    Actividades: Volar en globo aerostático, explorar la ciudad de
+                    Estambul, visitar la histórica Hagia Sophia.
+                </p>
+
+                <p>
+                    <span>3. Francia (Provenza):</span> Colores de otoño en los paisajes
+                    vinícolas.
+                </p>
+                <p>
+                    Actividades: Visitar viñedos, explorar mercados de lavanda, recorrer
+                    aldeas medievales.
+                </p>
+
+                <p>
+                    <span>4. España (Cataluña):</span> Clima agradable para explorar
+                    ciudades y costas.
+                </p>
+                <p>
+                    Actividades: Disfrutar de la gastronomía local, explorar el Parque
+                    Güell, hacer senderismo por los Pirineos.
+                </p>
+
+                <p>
+                    <span>5. Portugal (Lisboa y Oporto):</span> Clima templado y muchas
+                    actividades culturales.
+                </p>
+                <p>
+                    Actividades: Recorrer Lisboa, probar el vino de Oporto, explorar la
+                    costa del Algarve.
+                </p>
+            </details>
+            <br />
+            <details>
+                <summary id="Invierno">Invierno: </summary>
+                <br />
+                <p>
+                    <span>1. Suiza (Zermatt y los Alpes suizos):</span> Ideal para
+                    deportes de invierno y paisajes nevados.
+                </p>
+                <p>
+                    Actividades: Esquí, snowboard, senderismo en nieve, disfrutar de
+                    spas termales.
+                </p>
+
+                <p>
+                    <span>2. Noruega (Lofoten y Tromsø):</span> Auroras boreales y
+                    paisajes de nieve.
+                </p>
+                <p>
+                    Actividades: Ver las auroras boreales, explorar fiordos, safari en
+                    trineo.
+                </p>
+
+                <p>
+                    <span>3. México (Cancún y Riviera Maya):</span> Clima cálido y
+                    playas para disfrutar del sol en invierno.
+                </p>
+                <p>
+                    Actividades: Relajarse en playas, visitar las ruinas de Tulum, nadar
+                    en cenotes.
+                </p>
+
+                <p>
+                    <span>4. Nueva York (Estados Unidos):</span> Decoraciones navideñas
+                    y ambiente festivo.
+                </p>
+                <p>
+                    Actividades: Ver el árbol de Navidad en Rockefeller Center, patinar
+                    sobre hielo en Central Park, recorrer museos.
+                </p>
+
+                <p>
+                    <span>5. Tailandia (Islas Phi Phi y Phuket):</span> Clima tropical
+                    ideal para disfrutar del mar y la cultura local.
+                </p>
+                <p>
+                    Actividades: Snorkel, explorar templos budistas, relajarte en las
+                    playas.
+                </p>
+            </details>
+        </fieldset>
+        <br />
+        <fieldset id="C1">
+            <legend style="
+            color: rgb(0, 2, 95);
+            background-color: white;
+            border-radius: 4px;
+          ">
+                Datos Personales
+            </legend>
+            <label for="nombre1">Nombre: </label>
+            <input type="text" id="nombre1" name="nombre1" />
+            <br />
+            <label for="apellido2">Apellidos: </label>
+            <input type="text" id="apellido2" name="apellido2" />
+            <br />
+            <label for="dniNie">DNI/NIE: </label>
+            <input type="text" id="dniNie" name="dniNie" />
+            <br />
+            <label for="pasaporte">Pasaporte: </label>
+            <input type="text" id="pasaporte" name="pasaporte" />
+            <br />
+            <label for="tlf2">Teléfono: </label>
+            <input type="text" id="tlf2" name="tlf2" />
+            <br />
+            <label for="correo2">Correo electrónico: </label>
+            <input type="text" id="correo2" name="correo2" />
+            <br />
+            <label for="Género">Género :</label>
+            <label for="mujer">M </label>
+            <input type="checkbox" name="mujer" id="mujer" />
+            <label for="hombre">H </label>
+            <input type="checkbox" name="hombre" id="hombre" />
+            <label for="otros">otros </label>
+            <input type="checkbox" name="otros" id="otros" />
+            <br /><br>
+            <label for="Img2">Certificado Médico (enfermedad o alergia): </label>
+            <input type="file" id="Img2" name="Img2" alt="Certificado Médico" />
+            <hr>
+            <button type="reset">Borrar datos</button>
+            <button type="submit" id="enviar2" name="enviar2">Enviar</button>
+        </fieldset>
     </form>
-</fieldset>
-<fieldset>
-    <legend>Formulario de Contacto</legend>
+    <br />
     <form>
-        <label for="email">Email: </label>
-        <br>
-        <input type="email" id="email" placeholder="Introduce tu email" required>
-        <br><br>
-        <label for="telefono">Teléfono: </label>
-        <br>
-        <input type="tel" id="telefono" placeholder="Introduce tu teléfono">
-        <br><br>
+        <fieldset id="C2">
+            <legend style="
+            color: rgb(0, 2, 95);
+            background-color: white;
+            border-radius: 4px;
+          ">
+                Reserva de vuelo
+            </legend>
+
+            <label for="paisSalida">Desde: </label>
+            <select id="pais">
+                <option value="">Selecciona un País</option>
+              </select>
+            <br />
+            <label for="paisLlegada"> Hasta: </label>
+            <select id="pais">
+                <option value="">Selecciona un País</option>
+              </select>
+            <br />
+            <label for="Aerolínea">Aerolínea: </label>
+            <select id="Aerolínea">
+                <option value="AA">American Airlines</option>
+                <option value="AF">Air France</option>
+                <option value="BA">British Airways</option>
+                <option value="DL">Delta Airlines</option>
+                <option value="EK">Emirates</option>
+                <option value="LH">Lufthansa</option>
+                <option value="QR">Qatar Airways</option>
+                <option value="KL">KLM</option>
+                <option value="IB">Iberia</option>
+                <option value="UA">United Airlines</option>
+                <option value="AM">Aeroméxico</option>
+                <option value="QF">Qantas</option>
+                <option value="NH">All Nippon Airways (ANA)</option>
+                <option value="CX">Cathay Pacific</option>
+                <option value="SQ">Singapore Airlines</option>
+            </select>
+            <br />
+            <label for="ida">Ida: </label>
+            <input type="checkbox" name="ida" id="ida" />
+            <label for="idaVuelta">Ida y vuelta: </label>
+            <input type="checkbox" name="idaVuelta" id="idaVuelta" />
+            <br /><br>
+            <label for="fsalida">Fecha Salida: </label>
+            <input type="date" name="fsalida" id="fsalida" />
+            <label for="fllegada">Fecha Regreso :</label>
+            <input type="date" name="fsalida" id="fsalida" />
+            <hr>
+            <button type="reset">Borrar datos</button>
+            <button id="enviar3" name="enviar3">Enviar</button>
+        </fieldset>
     </form>
-</fieldset>
+    <br />
+    <form>
+        <fieldset id="C3">
+            <legend style="
+            color: rgb(0, 2, 95);
+            background-color: white;
+            border-radius: 4px;
+          ">
+                Alojamiento
+            </legend>
+            <label for="alojamiento">Selecciona el tipo de alojamiento: </label>
+            <select id="alojamiento">
+                <option value=" ">Selecciona</option>
+                <option value="Hoteles">Hoteles</option>
+                <option value="Hostales">Hostales</option>
+                <option value="Apartamentos">Apartamentos</option>
+                <option value="Camping">Camping</option>
+                <option value="Cabañas">Cabañas y Bugalows</option>
+                <option value="Villas">Villas y casas rurales</option>
+                <br />
+            </select>
+            <br />
+            <label for="pension">Tipo de pensión</label>
+            <select id="pension">
+                <option value=" ">Selecciona</option>
+                <option value="Completa">
+                    Pensión Completa :(Incluye alojamiento, desayuno, almuerzo y cena).
+                </option>
+                <option value="Hostales">
+                    Media Pensión :(Incluye alojamiento, desayuno y una comida principal
+                    (almuerzo o cena).
+                </option>
+                <option value="Desayuno">
+                    Desayuno Incluido :(Solo el desayuno está incluido en el
+                    alojamiento).
+                </option>
+                <option value="SoloAlojamineto">
+                    Pensión de Solo Alojamiento :(Solo el alojamiento sin comidas).
+                </option>
+                <option value="Todo">
+                    Todo Incluido :(Abarca alojamiento, todas las comidas y bebidas, así
+                    como actividades y entretenimiento).
+                </option>
+                <option value="Agricola">
+                    Pensión Agrícola :(Alojamiento en granjas donde los huéspedes pueden
+                    participar en actividades agrícolas).
+                </option>
+                <option value="Exp">
+                    Pensión con Experiencias :(Incluye actividades adicionales, como
+                    clases de cocina, excursiones o talleres).
+                </option>
+                <option value="Tematica">
+                    Pensión Temática :(Pensión que se enfoca en un tema particular, como
+                    salud, bienestar o aventura).
+                </option>
+                <option value="Grupos">
+                    Pensión para Grupos :(Ofrecen tarifas especiales y comidas para
+                    grupos grandes, como colegios o familias).
+                </option>
+                <option value="Salud">
+                    Pensión de Salud :(Ofrece tratamientos de salud y bienestar junto
+                    con alojamiento y comidas saludables).
+                </option>
+            </select>
+            <br />
+            <button type="reset">Borrar datos</button>
+            <button id="enviar4" name="enviar4">Enviar</button>
+        </fieldset>
+    </form>
+    <br />
+    <form>
+        <fieldset id="C4">
+            <legend style="
+            color: rgb(0, 2, 95);
+            background-color: white;
+            border-radius: 4px;
+          ">
+                Rutas turísticas
+            </legend>
+            <label for="RT">Seleciona la/s ruta/s que desee realizar: </label>
+            <br />
+            <br />
+            <input type="checkbox" name="rNat" id="rNat" />
+            <label for="rNat">Rutas Naturales :(Para explorar paisajes, reservas naturales,
+                montañas, ríos y parques nacionales).</label>
+            <br />
+            <input type="checkbox" name="rCut" id="rCut" />
+            <label for="rCut">Rutas Culturales :(Enfocadas en la historia, tradiciones, y
+                patrimonio cultural, incluyendo museos, sitios arqueológicos y
+                monumentos).</label>
+            <br />
+            <input type="checkbox" name="rGas" id="rGas" />
+            <label for="rGas">Rutas Gastronómicas :(Centradas en la comida y bebida local, con
+                paradas en restaurantes, bodegas, mercados y festivales de
+                cocina).</label>
+            <br />
+            <input type="checkbox" name="rAdv" id="rAdv" />
+            <label for="rAdv">Rutas de Aventura :(Diseñadas para actividades como senderismo,
+                ciclismo, deportes acuáticos y otras experiencias al aire
+                libre).</label>
+            <br />
+            <input type="checkbox" name="rRE" id="rRE" />
+            <label for="rRE">Rutas Religiosas o Espirituales :(Enfocadas en la visita a templos,
+                iglesias, mezquitas, monasterios o lugares de peregrinación).</label>
+            <br />
+            <input type="checkbox" name="rAA" id="rAA" />
+            <label for="rAA">Rutas de Arte y Arquitectura :(Para explorar galerías de arte,
+                murales, arquitectura histórica y contemporánea).</label>
+            <br />
+            <input type="checkbox" name="rES" id="rES" />
+            <label for="rES">Rutas de Ecoturismo y Sostenibilidad :(Con visitas a proyectos
+                ecológicos, comunidades sostenibles y áreas de conservación).</label>
+            <br />
+            <input type="checkbox" name="rU" id="rU" />
+            <label for="rU">Rutas Urbanas :(Recorridos en ciudades para conocer barrios
+                históricos, modernos, zonas comerciales y lugares de interés
+                urbano).</label>
+            <br />
+            <hr />
+            <button type="reset">Borrar Selección</button>
+            <button id="enviar4" name="enviar4">Enviar</button>
+        </fieldset>
+        <br />
+        <fieldset id="C6">
+            <legend style="
+            color: rgb(0, 2, 95);
+            background-color: white;
+            border-radius: 4px;
+          ">
+                Comentarios y sugerencias
+            </legend>
+            <label for="comentarios">Escriba aquí los comentarios y sugerencias que desee
+                transmitirnos: </label>
+            <br />
+            <textarea cols="77" rows="10" placeholder="Escriba aquí..."></textarea>
+        </fieldset>
+        <br />
+        <fieldset id="C5">
+            <legend style="
+            color: rgb(0, 2, 95);
+            background-color: white;
+            border-radius: 4px;
+          ">
+                Pago y finalización
+            </legend>
+            <label for="Pago">Pulse el método de pago que desee:</label>
+            <table border="7px" border-radius="10px">
+                <tr>
+                    <td>
+                        <a href="https://www.visa.es/" target="_blank" rel="noopener noreferrer"><img src="Visa.png"
+                                alt="Visa" height="150px" width="225px" style="margin: 20px" /></a>
+                    </td>
+                    <td>
+                        <a href="https://www.mastercard.es/es-es.html" target="_blank" rel="noopener noreferrer"><img
+                                src="mastercard.png" alt="Mastercard" height="150px" width="225px"
+                                style="margin: 20px" /></a>
+                    </td>
+                    <td>
+                        <a href="https://www.paypal.com/es/home/" target="_blank" rel="noopener noreferrer"><img
+                                src="PayPal.png" alt="PayPal" height="150px" width="250px" style="margin: 20px" /></a>
+                    </td>
+                    <td>
+                        <a href="https://www.paysafecard.com/es-es/" target="_blank" rel="noopener noreferrer"><img
+                                src="PaySafeCard.png" alt="PaySafeCard" height="150px" width="200px"
+                                style="margin: 20px" /></a>
+                    </td>
+                </tr>
+            </table>
+            <details>
+                <summary style="color: blue; text-decoration: underline; width: 225px">
+                    Términos y Condiciones.
+                </summary>
+                <p>
+                    <span>1. Cobertura del Seguro:</span> Este seguro de viaje cubre
+                    gastos médicos, cancelación del viaje, pérdida de equipaje y
+                    repatriación en caso de emergencia. Los montos específicos de
+                    cobertura están sujetos a los términos de la póliza seleccionada y
+                    al plan contratado.
+                </p>
+                <p>
+                    <span>2. Exclusiones Generales:</span> No se cubrirán incidentes
+                    derivados de actividades riesgosas como deportes extremos (salvo que
+                    se haya contratado un plan específico que lo incluya), ni de
+                    participación en actos ilegales o situaciones de conflicto bélico.
+                    Tampoco se cubrirán enfermedades preexistentes, salvo que se haya
+                    contratado cobertura adicional para las mismas.
+                </p>
+                <p>
+                    <span>3. Cancelación y Modificación del Viaje:</span> La cobertura
+                    de cancelación del viaje aplica solo en situaciones especificadas,
+                    como enfermedad, fallecimiento de un familiar cercano, o desastre
+                    natural. No se cubrirán cancelaciones por motivos personales o
+                    cambios de plan a último minuto. La cancelación debe ser notificada
+                    con la documentación correspondiente.
+                </p>
+                <p>
+                    <span>4. Pérdida de Equipaje:</span> La póliza cubre la pérdida,
+                    daño o robo de equipaje registrado. La cobertura no se aplica a
+                    objetos personales de alto valor, como dispositivos electrónicos, a
+                    menos que se haya especificado en el contrato. Es necesario
+                    presentar un informe policial en caso de robo y notificar a la
+                    aerolínea o transportista en un plazo de 24 horas.
+                </p>
+                <p>
+                    <span>5. Gastos Médicos en el Extranjero:</span> La aseguradora
+                    cubrirá los gastos médicos en el extranjero hasta el límite
+                    especificado en la póliza, en caso de enfermedad o accidente. Es
+                    obligatorio contactar al proveedor de asistencia antes de recibir
+                    tratamiento, excepto en situaciones de emergencia en las que la vida
+                    del asegurado esté en peligro.
+                </p>
+                <p>
+                    <span>6. Repatriación y Asistencia en Caso de Emergencia:</span> En
+                    caso de accidente grave, enfermedad o fallecimiento, se cubrirán los
+                    gastos de repatriación del asegurado al país de residencia,
+                    incluyendo el acompañamiento de un familiar si es necesario. La
+                    aseguradora debe ser informada antes de cualquier traslado.
+                </p>
+                <p>
+                    <span>7. Requisitos para la Solicitud de Reembolso:</span> Para
+                    solicitar el reembolso de gastos cubiertos, el asegurado debe
+                    presentar los documentos justificativos, como recibos médicos,
+                    informes policiales, y cualquier otra documentación que la
+                    aseguradora considere necesaria. El incumplimiento de estos
+                    requisitos puede resultar en la denegación de la reclamación.
+                </p>
+                <p>
+                    <span>8. Duración y Vigencia de la Póliza:</span> La póliza es
+                    válida únicamente para el período especificado en el contrato y solo
+                    cubre eventos ocurridos durante el mismo. La cobertura comienza y
+                    termina en las fechas estipuladas al momento de la contratación.
+                </p>
+                <p>
+                    <span>9. Responsabilidad Limitada:</span> La aseguradora no será
+                    responsable por pérdidas indirectas, lucro cesante, o cualquier daño
+                    consecuencial derivado de un evento cubierto. La responsabilidad
+                    máxima de la aseguradora estará limitada a los montos especificados
+                    en la póliza de seguro.
+                </p>
+                <p>
+                    <span>10. Cancelación de la Póliza:</span> La póliza puede ser
+                    cancelada por el asegurado dentro de los primeros 14 días tras su
+                    emisión, siempre que no haya iniciado el viaje ni se haya realizado
+                    ninguna reclamación. Después de este período, se aplicarán cargos
+                    administrativos si se solicita la cancelación.
+                </p>
+                <p>
+                    <span>11. Resolución de Conflictos:</span> En caso de desacuerdo
+                    entre el asegurado y la aseguradora, ambas partes se comprometen a
+                    resolver el conflicto mediante arbitraje o mediante los mecanismos
+                    establecidos en la ley aplicable. Los tribunales de la jurisdicción
+                    competente serán los únicos autorizados para resolver cualquier
+                    disputa.
+                </p>
+                <p>
+                    <span>12. Aceptación de Términos:</span> Al contratar el seguro de
+                    viaje, el asegurado declara haber leído, comprendido y aceptado los
+                    términos y condiciones aquí descritos, y se compromete a cumplir con
+                    todas las obligaciones y restricciones detalladas en el contrato de
+                    seguro.
+                </p>
+            </details>
+            <label for="terms">He leido y acepto todos los terminos y condiciones</label>
+            <input type="checkbox" name="terms" id="terms" />
+            <br />
+            <label for="not">Deseo recivir notificaciones sobre ofertas de viajes</label>
+            <input type="checkbox" name="not" id="not" />
+            <br />
+            <button type="submit">Reservar</button>
+        </fieldset>
+    </form>
+    <script src="Paises.js"></script>
 </body>
+
 </html>
