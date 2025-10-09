@@ -1,6 +1,8 @@
 body {
     border: 1px solid black;
-    width: 100vh;
+    width: 97vw;
+    margin: 1vw auto;
+    box-sizing: border-box;
 }
 
 nav ul {
@@ -19,7 +21,7 @@ nav a {
 }
 
 .colorMasOscuro {
-    background-color: rgb(255, 193, 172);
+    background-color: #ffeb3b;
     padding: 15px;
     border: 1px solid black;
     margin: 5px;
@@ -29,7 +31,8 @@ section {
     padding: 15px;
 }
 
-nav, header {
+nav,
+header {
     display: inline-block;
     width: 45%;
     text-align: center;
@@ -44,14 +47,21 @@ footer {
     text-align: center;
 }
 
+section.colorMasOscuro {
+    text-align: center;
+}
+
 article {
     display: inline-block;
     width: 48%;
     vertical-align: middle;
+    box-sizing: border-box;
 }
 
 #izquierda {
     border-right: 1px solid black;
+    text-align: left;
+    padding-left: 15px;
 }
 
 #derecha {
@@ -61,11 +71,60 @@ article {
 button {
     border: 2px solid black;
     border-radius: 5px;
-    width: 50%;
-    height: 50px;
+    width: 60;
+    height: 45px;
+    background-color: white;
+    vertical-align: middle;
 }
 
 button:hover {
-    background-color: crimson;
-    color: white;
+    background-color: #000000;
+    color: #ffeb3b;
 }
+
+#imagen {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+i {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/*MODO OSCURO*/
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      border-color: rgb(255, 255, 255);
+    }
+  
+    .colorMasOscuro {
+        background-color: #ffeb3b;
+        border-color: rgb(0, 0, 0);
+        color: black;
+    }
+  
+    .colorMasClaro {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+  
+    nav a {
+      color: #000000;
+    }
+  
+    button {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border-color: rgb(0, 0, 0);
+    }
+  
+    button:hover {
+      background-color: #000000;
+      color: #ffeb3b;
+    }
+  }
+  
