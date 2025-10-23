@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    height: 98vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10%;
+    background-color: rgb(124, 255, 222);
+}
+
+#image {
+    flex-basis: 50%;
+    background-color: rgb(140, 0, 255);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    background-color: rgb(124, 255, 222);
+}
+
+.lista {
+    background-color: rgb(250, 250, 250);
+    flex-basis: 10%;
+    width: 75%;
+    margin: 12.5% 12.5%;
+}
+
+#title {
+    flex-basis: 45%;
+    background-color: rgb(124, 255, 222);
+}
+
+#description {
+    flex-basis: 35%;
+    background-color: rgb(255, 0, 234);
+}
+
+#options {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.options {
+    background-color: rgb(255, 255, 255);
+    flex-basis: 20%;
+    height: 75%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
