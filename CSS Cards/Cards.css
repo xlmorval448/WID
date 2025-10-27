@@ -1,0 +1,40 @@
+
+#contenedor {
+    display: flex;
+    height: 60vh;
+    width: 70vw;
+    justify-content: space-evenly;
+}
+
+.rs {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    text-align: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    justify-content: space-evenly;
+}
+
+.title {
+    font-size: 120%;
+}
+
+.readMore {
+    background-color: black;
+    color: white;
+    width: 70%;
+    border-radius: 50px;
+}
+
+.rs:hover {
+    color: white;
+    background-color: rgb(255, 75, 105);
+    border: 0px;
+
+    .readMore{
+        background-color: white;
+        color: rgb(255, 75, 105);
+    }
+}
