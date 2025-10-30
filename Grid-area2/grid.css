@@ -1,0 +1,45 @@
+.contenedor {
+    background-color: red;
+}
+
+#contenedor {
+    display: grid;
+    height: 70vh;
+    width: 70vw;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+@media(min-width: 1280px)
+{
+    #contenedor {
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #contenedor > :nth-child(1) {
+        grid-row: 2 / span 2;
+    }
+
+    #contenedor > :nth-child(2) {
+        grid-row: 1 / span 2;
+    }
+
+    #contenedor > :nth-child(3) {
+        grid-row: 2 / span 2;
+    }
+
+    #contenedor > :nth-child(4) {
+        grid-row: 3 / span 2;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #contenedor {
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
+    .contenedor {
+    gap: 20px;
+}
+}
