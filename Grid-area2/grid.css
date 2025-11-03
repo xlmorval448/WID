@@ -1,12 +1,62 @@
-.contenedor {
-    background-color: red;
+body {
+    background-color: rgb(219, 219, 219);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: white;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 #contenedor {
     display: grid;
     height: 70vh;
     width: 70vw;
+    justify-self: center;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#contenedor .cards {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    h1, h3 {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    h3 {
+        font-weight: lighter;
+    }
+    i {
+        align-self: flex-end;
+        margin-right: 7%;
+    }
+}
+
+#contenedor > :nth-child(odd) {
+    border-radius: 10px;
+    border-top: 7px solid rgb(229, 255, 0);
+}
+#contenedor > :nth-child(even) {
+    border-radius: 10px;
+    border-top: 7px solid rgb(0, 255, 221);
+}
+
+footer {
+    background-color: white;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    p {
+        text-align: center;
+    }
 }
 
 @media(min-width: 1280px)
@@ -16,16 +66,12 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    #contenedor > :nth-child(1) {
+    #contenedor > :nth-child(odd) {
         grid-row: 2 / span 2;
     }
 
     #contenedor > :nth-child(2) {
         grid-row: 1 / span 2;
-    }
-
-    #contenedor > :nth-child(3) {
-        grid-row: 2 / span 2;
     }
 
     #contenedor > :nth-child(4) {
@@ -39,7 +85,4 @@
         gap: 10px;
         grid-template-columns: 1fr;
     }
-    .contenedor {
-    gap: 20px;
-}
 }
