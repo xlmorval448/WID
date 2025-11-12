@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: white;
 }
 
 header {
@@ -8,8 +9,12 @@ header {
     align-items: center;
     padding: 10px 10px;
     border-bottom: 4px solid black;
-    width: calc(100vw - 3vw);    
+    width: calc(100vw - 3vw);
+
     margin: 0 auto;
+    background-color: white;
+    position: relative;
+    z-index: 10000;
 }
 
 header h1 {
@@ -34,13 +39,14 @@ header nav {
 
 .cards {
     display: flex;
-    height: 62vh;
+    height: 60vh;
     justify-content: space-evenly;
-    width: calc(100vw - 3vw);    
+    width: calc(100vw - 3vw);
     margin-top: 5vh;
     margin-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .film {
@@ -52,6 +58,11 @@ header nav {
     border: 3px solid black;
     border-radius: 10px;
     justify-content: space-evenly;
+    position: relative;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.5s ease, z-index 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
 .film .hero {
@@ -71,4 +82,43 @@ header nav {
 .film h3 {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.film .tarjeta_ampliada {
+    height: 100%;
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 0 10px 10px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.tarjeta_ampliada .informacion h3,
+.tarjeta_ampliada .informacion h4 {
+    margin-top: 0;
+    border-bottom: 2px solid black;
+}
+
+.tarjeta_ampliada .informacion p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.film:hover .tarjeta_ampliada {
+    opacity: 1;
+    display: block;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+.film:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    z-index: 9999;
 }
