@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="Cine.css">
     <title>CineQuinto</title>
 </head>
@@ -13,6 +15,7 @@
     <header>
         <h1 id="CineQuinto">CineQuinto</h1>
         <nav>
+            <h3 id="dE">¿Dónde estamos?</h3>
             <h3 id="Cartelera">Cartelera</h3>
             <h3>Contacto</h3>
             <div class="button">
@@ -20,6 +23,14 @@
             </div>
         </nav>
     </header>
+
+    <div id="mapaDiv">
+        <i class="fa-solid fa-right-from-bracket" id="ocultarMapa"></i>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6343.373955804193!2d-5.945908523658343!3d37.34991873651891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126fb4c4e06dbb%3A0x60a13f5ae2ae15d6!2sIES%20Hermanos%20Machado!5e0!3m2!1ses!2ses!4v1763036560418!5m2!1ses!2ses"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" id="mapa"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
     <div id="carousel">
         <i class="fa-solid fa-right-from-bracket" id="ocultarTrailer"></i>
@@ -40,6 +51,9 @@
             <h3>The battleground is set for the final battle.</h3>
             <div class="button">Ver Trailer</div>
         </div>
+    </div>
+    <div id="tp">
+        <h1>TÍTULOS POPULARES</h1>
     </div>
     <main>
         <div id="cards">
