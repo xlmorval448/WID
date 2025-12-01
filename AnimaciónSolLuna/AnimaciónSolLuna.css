@@ -10,7 +10,7 @@
     border: 4px solid #333;
     position: relative;
     overflow: hidden;
-    animation: ciclo-cielo 20s linear infinite;
+    animation: cielo 15s linear infinite;
 }
 
 #agua {
@@ -26,7 +26,6 @@
 #sol, #luna {
     position: absolute;
     width: 80px;
-    height: auto;
     left: 50%;
     top: 50%;
     margin-left: -40px;
@@ -35,61 +34,58 @@
 }
 
 #sol {
-    z-index: 1;
-    animation: orbita-sol 20s linear infinite;
+    animation: recorrido_sol 15s linear infinite;
 }
 
 #luna {
-    z-index: 2;
-    animation: orbita-luna 20s linear infinite;
+    animation: recorrido_luna 15s linear infinite;
 }
 
 #nube1, #nube2, #nube3, #nube4 {
     position: absolute;
     width: 75px;
-    z-index: 5;
 }
 
 #nube1 {
-    top: 40px;
-    animation: mover-nubes 25s linear infinite;
+    top: 10px;
+    animation: recorrido_nubes 15s linear infinite;
 }
 
 #nube2 {
-    top: 80px;
-    animation: mover-nubes 35s linear infinite;
+    top: 30px;
+    animation: recorrido_nubes 20s linear infinite reverse;
 }
 
 #nube3 {
-    top: 120px;
-    animation: mover-nubes 45s linear infinite;
+    top: 65px;
+    animation: recorrido_nubes 25s linear infinite;
 }
 
 #nube4 {
-    top: 60px;
-    animation: mover-nubes 30s linear infinite reverse;
+    top: 100px;
+    animation: recorrido_nubes 30s linear infinite reverse;
 }
 
-@keyframes ciclo-cielo {
+@keyframes cielo {
     0% { background-color: #87CEEB; }
     100% { background-color: #000000; }
 }
 
-@keyframes orbita-sol {
+@keyframes recorrido_sol {
     0% { transform: rotate(-90deg); }
     25% { transform: rotate(0deg); }
     50% { transform: rotate(90deg); }
     100% { transform: rotate(90deg); }
 }
 
-@keyframes orbita-luna {
+@keyframes recorrido_luna {
     0% { transform: rotate(-90deg); }
     50% { transform: rotate(-90deg); }
     75% { transform: rotate(0deg); }
     100% { transform: rotate(90deg); }
 }
 
-@keyframes mover-nubes {
+@keyframes recorrido_nubes {
     from { left: -150px; }
     to { left: 100%; }
 }
