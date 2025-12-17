@@ -1,0 +1,42 @@
+body {
+    background-color: lightblue;
+}
+
+.cards {
+    margin-top: 5vh;
+    display: flex;
+    height: 50vh;
+    justify-content: space-evenly;
+    width: calc(100vw - 3vw);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 1%;
+    flex-basis: 27%;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 90%;
+    align-items: center;
+    transition: transform 0.3s ease-out;
+}
+
+.card img {
+    border-radius: 15px;
+    width: 90%;
+    transition: transform 0.3s ease-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+
+    img {
+        transform: rotate(10deg)
+    }
+}
